@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articles = {
+/*var articles = {
   articleOne : {
     title: 'Article One',
     heading: 'Article-1',
@@ -95,15 +95,17 @@ var htmlTemplate =
 </html>`;
 }
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
+
 
 app.get('/:articleName', function (req, res) {
     // articleName == article-one
     // articles[articleName] == {} content object for article one
     var articleName = req.params.articleName;
   res.send(createTemplate(articles[articleName]));
+});
+*/
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
@@ -114,7 +116,7 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-/*app.get('/article-1', function (req, res) {
+app.get('/article-1', function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'article_one.html'));
 });
 
@@ -125,7 +127,7 @@ app.get('/article-2', function (req, res) {
 app.get('/article-3', function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'article_three.html'));
 });
-*/
+
 
 
 // Do not change port, otherwise your app won't run on IMAD servers

@@ -32,9 +32,14 @@ a {
 p {
     color: #ffffff;
     font-family: sans-serif;
-    padding-left: 80px;
+    /*padding-left: 80px;*/
 }
 
 h1 {
     color: darkblue;
+}
+
+div {
+    margin: auto;
+    padding: 20px;
 }

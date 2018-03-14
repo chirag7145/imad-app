@@ -30,6 +30,10 @@ a {
 }
 
 p {
-    color: black;
+    color: #ffffff;
     font-family: sans-serif;
+}
+
+h1 {
+    color: darkblue;
 }

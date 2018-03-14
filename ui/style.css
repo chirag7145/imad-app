@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
+    background-color: black;
     margin-top: 75px;
 }
 
@@ -26,5 +26,10 @@ button {
 
 a {
     text-decoration: none;
-    color: blue;
+    color: green;
+}
+
+p {
+    color: black;
+    font-family: sans-serif;
 }

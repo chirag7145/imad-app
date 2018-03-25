@@ -120,11 +120,11 @@ app.get('/article-one', function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'article_one.html'));
 });
 
-app.get('/article-2', function (req, res) {
+app.get('/article-two', function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'article_two.html'));
 });
 
-app.get('/article-3', function (req, res) {
+app.get('/article-three', function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'article_three.html'));
 });
 
